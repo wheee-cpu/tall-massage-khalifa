@@ -1,0 +1,30 @@
+<html>
+    <head></head>
+    <script>
+        function calc(){
+    var x = document.getElementById("InputX").value;
+    var y = document.getElementById("Input").value;
+    var btanswer = x**2;
+    var sanswer = x*y;
+    var wanswer = x-y;
+    var danswer = parseFloat(x) + parseFloat(y);
+    var answer = x/y;
+    document.getElementById("answer").innerHTML = "<h1>" + btanswer + " (Square) <br>"+ "</h1>" + "<h1>"+sanswer + " (Product) <br>"+ "</h1>" + "<h1>"+wanswer + " (Difference) <br>" + "</h1>"+ "<h1>"+danswer + " (Sum) <br>" + "</h1>"+ "<h1>"+answer + " (Quotient) <br>"+ "</h1>";
+
+        }
+    </script>
+    <style>
+    
+    body{
+
+        background-color: black;
+    }
+
+    h1{
+
+        color: whitesmoke;
+    }
+        
+        </style>
+    <body><input type = "number" id = "InputX"><input type = "number" id = "Input"><div id = "answer"><h1>Calculations appear here</h1>></div><button onclick = "calc()">Cals</button></body>
+</html>
